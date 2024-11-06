@@ -1,6 +1,8 @@
 from app import App
 from csv import reader
+from tech import (Phone, Laptop)
 
+"""
 apps = []
 
 with open('app_list.csv') as csv_file:
@@ -12,3 +14,13 @@ with open('app_list.csv') as csv_file:
 
 for app in apps:
     print(app)
+"""
+
+
+lap = Laptop(5, "macbook", 256)
+pho = Phone("pixel", 128, "sage")
+
+print(lap)
+print(pho)
+print(repr(lap))
+print(repr(pho))
